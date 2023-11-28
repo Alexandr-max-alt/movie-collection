@@ -1,0 +1,71 @@
+.card{
+    margin-top: 100px ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 20px;
+    border: 1px solid rgba(215, 169, 169, 0.624);
+    background-color: #d9f0ee;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 600px;
+    max-height: 600px;
+    animation: scaleIN .4s ease-in-out;
+  }
+
+.card-name{
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.card-translation{
+  font-size: 2rem;
+  filter: blur(0.5rem);
+}
+
+.card-button-yes{
+  background-color: rgba(118, 245, 118, 0.609);
+}
+
+.card-buttons{
+  display: flex;
+  align-items: center;
+  gap: 6.25rem;
+}
+
+.card-buttons button{
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 30px;
+  min-width: 180px;
+  margin-top: 20px;
+  transition: all .2s ease-in-out;
+}
+
+.card-buttons button:hover{
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+}
+.card-buttons button:active{
+  transform: scale(0.9);
+}
+
+.card-button-no{
+  background-color: rgb(250, 122, 122)
+}
+
+@keyframes blurOut{
+  0%{
+    filter: blur(0.5rem);
+  }
+  25%{
+    filter: blur(0);
+  }
+  100%{
+    filter: blur(0);
+  }
+}
+
+.show-answer{
+  animation: blurOut 5s ease-in-out;
+}

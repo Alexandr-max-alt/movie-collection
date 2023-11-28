@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+
+* {
+    font-family: 'Inter', system-ui;
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+*,*:before,*:after{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; 
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+   
+nav,footer,header,aside{display: block;}
+   
+html,body {
+     height: 100%;
+     width: 100%;
+     font-size: 100%;
+     line-height: 1;
+     font-size: 16px;
+     -ms-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+     -webkit-text-size-adjust: 100%;
+}
+   
+input,button,textarea {font-family: inherit;}
+   
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button:-moz-focus-inner {padding: o;border: 0;}
+a, a:visited{text-decoration: none;}
+ul li{list-style: none;}
+img{ vertical-align: top;}
+   
+h1,h2,h3,h4,h5,h6{font-size: inherit; font-weight: 400;}
+body {
+  background-color: #FFF5EE;
+}
+
+.App{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header{
+  padding: 3.125rem 0;
+  display: flex;
+  justify-content: center;
+}
+
+.header__title{
+  font-size: 4rem;
+  font-family: "Dancing+Script";
+  text-shadow: rgba(255, 204, 0, 0.621) 1px 0 10px; ;
+}
+
+.content{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+@keyframes scaleIN{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.button-clear{
+  position: absolute;
+  top: 5rem;
+  right: 10rem;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 30px;
+  min-width: 180px;
+  max-height: 56px;
+  margin-top: 20px;
+  transition: all .2s ease-in-out;
+  background-color: #d9f0ee;
+}
+
+.button-clear:hover{
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+}
+.button-clear:active{
+  transform: scale(0.9);
+}
+
+
+.button-table{
+  position: absolute;
+  top: 5rem;
+  left: 10rem;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 30px;
+  min-width: 180px;
+  max-height: 56px;
+  margin-top: 20px;
+  transition: all .2s ease-in-out;
+  background-color: #d9f0ee;
+}
+
+.button-table:hover{
+  box-shadow: 0 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button-table:active{
+  transform: scale(0.9);
+}
