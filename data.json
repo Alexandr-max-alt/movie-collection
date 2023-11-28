@@ -1,167 +1,133 @@
+
 [
     {
-        "name": "Dog",
-        "translation": "Собака",
-        "id":"0"
-    },  {
-        "name": "Cat",
-        "translation": "Кошка",
-        "id":"1"
-    },  {
-        "name": "House",
-        "translation": "Дом",
-        "id":"2"
-    },  {
-        "name": "Tree",
-        "translation": "Дерево",
-        "id":"3"
-    },  {
-        "name": "Path",
-        "translation": "Путь",
-        "id":"4"
-    },  {
-        "name": "Heart",
-        "translation": "Сердце",
-        "id":"5"
-    },  {
-        "name": "Car",
-        "translation": "Машина",
-        "id":"6"
-    },  {
-        "name": "Promise",
-        "translation": "Обещание",
-        "id":"7"
-    },  {
-        "name": "Сircus",
-        "translation": "Цирк",
-        "id":"8"
-    },  {
-        "name": "Flowers",
-        "translation": "Цветы",
-        "id":"9"
-    },  {
-        "name": "White",
-        "translation": "Белый",
-        "id":"10"
-    },  {
-        "name": "As",
-        "translation": "Как",
-        "id":"11"
-    },  {
-        "name": "I",
-        "translation": "Я",
-        "id":"12"
-    },  {
-        "name": "His",
-        "translation": "Его",
-        "id":"13"
-    },  {
-        "name": "Her",
-        "translation": "Её",
-        "id":"14"
-    },  {
-        "name": "For",
-        "translation": "Для",
-        "id":"15"
-    },  {
-        "name": "On",
-        "translation": "На",
-        "id":"16"
-    },  {
-        "name": "With",
-        "translation": "С",
-        "id":"17"
-    },  {
-        "name": "One",
-        "translation": "Один",
-        "id":"18"
-    },  {
-        "name": "be",
-        "translation": "Быть",
-        "id":"19"
-    },  {
-        "name": "Have",
-        "translation": "Иметь",
-        "id":"20"
-    },  {
-        "name": "From",
-        "translation": "Из",
-        "id":"21"
-    },  {
-        "name": "Hot",
-        "translation": "Горячий",
-        "id":"22"
-    },  {
-        "name": "by",
-        "translation": "От",
-        "id":"23"
-    },  {
-        "name": "Some",
-        "translation": "Некоторый",
-        "id":"24"
-    },  {
-        "name": "You",
-        "translation": "Ты",
-        "id":"25"
-    },  {
-        "name": "Or",
-        "translation": "Или",
-        "id":"26"
-    },  {
-        "name": "And",
-        "translation": "И",
-        "id":"27"
-    },  {
-        "name": "Other",
-        "translation": "Другой",
-        "id":"28"
-    },  {
-        "name": "Their",
-        "translation": "Их",
-        "id":"29"
-    },  {
-        "name": "Which",
-        "translation": "Который",
-        "id":"30"
-    },  {
-        "name": "Can",
-        "translation": "Может",
-        "id":"31"
-    },  {
-        "name": "Which",
-        "translation": "Который",
-        "id":"32"
-    },  {
-        "name": "Out",
-        "translation": "Вне",
-        "id":"33"
-    },  {
-        "name": "Were",
-        "translation": "Были",
-        "id":"34"
-    },  {
-        "name": "Time",
-        "translation": "Время",
-        "id":"35"
-    },  {
-        "name": "Said",
-        "translation": "Говорить",
-        "id":"36"
-    },  {
-        "name": "If",
-        "translation": "Если",
-        "id":"37"
-    },  {
-        "name": "Tell",
-        "translation": "Говорить",
-        "id":"38"
-    },  {
-        "name": "Three",
-        "translation": "Три",
-        "id":"39"
-    },  {
-        "name": "Small",
-        "translation": "Маленький",
-        "id":"40"
+     "name": "Driver",
+     "photo": "https://images.unsplash.com/photo-1534188278934-76700c2da08b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+     "year": "2011",
+     "description": " Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reiciendis vel saepe libero nisi deleniti molestias blanditiis, minima non delectus nulla quia nihil, sit facilis quidem, perferendis cupiditate perspiciatis pariatur quo? Aliquam voluptates ullam eligendi. Velit sint corporis eum corrupti iste quidem rem assumenda est quasi facilis sit dolorem excepturi fugit consequuntur ipsam, ex voluptatem necessitatibus dolorum rerum aliquid atque harum.",
+     "rating":"0",
+     "link":"https://www.kinopoisk.ru/film/358/",
+     "director": "Alan Wake",
+     "actors": "Helen Wind, Gregory Maps, Billy Morfling, Bred Pit, Moris Endry, Philips Morgan, Sasha Metue, Drue Bring, Alice Wender, Pit Frost",
+     "comments":[],
+     "country":"Germany",
+     "id":"1"
+    },
+    {
+     "name": "Insurrection",
+     "photo": "https://plus.unsplash.com/premium_photo-1683134559962-1f316af881d0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+     "year": "2021",
+     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vel saepe libero nisi deleniti molestias blanditiis, minima non delectus nulla quia nihil, sit facilis quidem, perferendis cupiditate perspiciatis pariatur quo? Aliquam voluptates ullam eligendi. Velit sint corporis eum corrupti iste quidem rem assumenda est quasi facilis sit dolorem excepturi fugit consequuntur ipsam, ex voluptatem necessitatibus dolorum rerum aliquid atque harum.",
+     "rating":"0",
+     "link":"https://www.kinopoisk.ru/film/3470/",
+     "director": "Brick Wilson",
+     "actors": "Helen Wind, Gregory Maps, Billy Morfling, Bred Pit, Moris Endry, Philips Morgan, Sasha Metue, Drue Bring, Alice Wender, Pit Frost",
+     "comments":[],
+     "country":"Germany",
+     "id":"2"
+    },
+    {
+     "name": "Spider-man",
+     "photo": "https://images.unsplash.com/photo-1534809027769-b00d750a6bac?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+     "year": "2015",
+     "description": " Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reiciendis vel saepe libero nisi deleniti molestias blanditiis, minima non delectus nulla quia nihil, sit facilis quidem, perferendis cupiditate perspiciatis pariatur quo? Aliquam voluptates ullam eligendi. Velit sint corporis eum corrupti iste quidem rem assumenda est quasi facilis sit dolorem excepturi fugit consequuntur ipsam, ex voluptatem necessitatibus dolorum rerum aliquid atque harum.",
+     "rating":"0",
+     "link":"https://www.kinopoisk.ru/film/838/",
+     "director": "Bred Pit",
+     "actors": "Helen Wind, Gregory Maps, Billy Morfling, Bred Pit, Moris Endry, Philips Morgan, Sasha Metue, Drue Bring, Alice Wender, Pit Frost",
+     "comments":[],
+     "country":"USA",
+     "id":"3"
+    },
+    {
+     "name": "Fencing in the dark",
+     "photo": "https://plus.unsplash.com/premium_photo-1664297930474-b99284f81922?q=80&w=2012&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+     "year": "2008",
+     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vel saepe libero nisi deleniti molestias blanditiis, minima non delectus nulla quia nihil, sit facilis quidem, perferendis cupiditate perspiciatis pariatur quo? Aliquam voluptates ullam eligendi. Velit sint corporis eum corrupti iste quidem rem assumenda est quasi facilis sit dolorem excepturi fugit consequuntur ipsam, ex voluptatem necessitatibus dolorum rerum aliquid atque harum.",
+     "rating":"0",
+     "link":"https://www.youtube.com/watch?v=VM6QrKsohQc",
+     "director": "Danek Gray",
+     "actors": "Helen Wind, Gregory Maps, Billy Morfling, Bred Pit, Moris Endry, Philips Morgan, Sasha Metue, Drue Bring, Alice Wender, Pit Frost",
+     "comments":[],
+     "country":"USA",
+     "id":"4"
+    },
+    {
+     "name": "Star wars",
+     "photo": "https://images.unsplash.com/photo-1579803815615-1203fb5a2e9d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+     "year": "2015",
+     "description": " Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reiciendis vel saepe libero nisi deleniti molestias blanditiis, minima non delectus nulla quia nihil, sit facilis quidem, perferendis cupiditate perspiciatis pariatur quo? Aliquam voluptates ullam eligendi. Velit sint corporis eum corrupti iste quidem rem assumenda est quasi facilis sit dolorem excepturi fugit consequuntur ipsam, ex voluptatem necessitatibus dolorum rerum aliquid atque harum.",
+     "rating":"0",
+     "link":"https://www.kinopoisk.ru/film/333/",
+     "director": "Olson Freack",
+     "actors": "Helen Wind, Gregory Maps, Billy Morfling, Bred Pit, Moris Endry, Philips Morgan, Sasha Metue, Drue Bring, Alice Wender, Pit Frost",
+     "comments":[],
+     "country":"USA",
+     "id":"5"
+    },
+    {
+     "name": "Сhucky doll",
+     "photo": "https://images.unsplash.com/photo-1613679074971-91fc27180061?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+     "year": "2010",
+     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vel saepe libero nisi deleniti molestias blanditiis, minima non delectus nulla quia nihil, sit facilis quidem, perferendis cupiditate perspiciatis pariatur quo? Aliquam voluptates ullam eligendi. Velit sint corporis eum corrupti iste quidem rem assumenda est quasi facilis sit dolorem excepturi fugit consequuntur ipsam, ex voluptatem necessitatibus dolorum rerum aliquid atque harum.",
+     "rating":"0",
+     "link":"https://www.kinopoisk.ru/series/1138779/",
+     "director": "Dread Berry",
+     "actors": "Helen Wind, Gregory Maps, Billy Morfling, Bred Pit, Moris Endry, Philips Morgan, Sasha Metue, Drue Bring, Alice Wender, Pit Frost",
+     "comments":[],
+     "country":"USA",
+     "id":"6"
+    },
+    {
+     "name": "Dance",
+     "photo": "https://images.unsplash.com/photo-1579702493440-8b1b56d47e03?q=80&w=1972&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+     "year": "1998",
+     "description": " Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reiciendis vel saepe libero nisi deleniti molestias blanditiis, minima non delectus nulla quia nihil, sit facilis quidem, perferendis cupiditate perspiciatis pariatur quo? Aliquam voluptates ullam eligendi. Velit sint corporis eum corrupti iste quidem rem assumenda est quasi facilis sit dolorem excepturi fugit consequuntur ipsam, ex voluptatem necessitatibus dolorum rerum aliquid atque harum.",
+     "rating":"0",
+     "link":"https://www.youtube.com/watch?v=RLwSgGffn4w",
+     "director": "Dashye Pilson",
+     "actors": "Helen Wind, Gregory Maps, Billy Morfling, Bred Pit, Moris Endry, Philips Morgan, Sasha Metue, Drue Bring, Alice Wender, Pit Frost",
+     "comments":[],
+     "country":"Russian",
+     "id":"7"
+    },
+    {
+     "name": "Hogwards garden",
+     "photo": "https://images.unsplash.com/photo-1519872436884-4a50eb5a62db?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+     "year": "2011",
+     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vel saepe libero nisi deleniti molestias blanditiis, minima non delectus nulla quia nihil, sit facilis quidem, perferendis cupiditate perspiciatis pariatur quo? Aliquam voluptates ullam eligendi. Velit sint corporis eum corrupti iste quidem rem assumenda est quasi facilis sit dolorem excepturi fugit consequuntur ipsam, ex voluptatem necessitatibus dolorum rerum aliquid atque harum.",
+     "rating":"0",
+     "link":"https://www.kinopoisk.ru/film/328/",
+     "director": "Clarck Feysi",
+     "actors": "Helen Wind, Gregory Maps, Billy Morfling, Bred Pit, Moris Endry, Philips Morgan, Sasha Metue, Drue Bring, Alice Wender, Pit Frost",
+     "comments":[],
+     "country":"Germany",
+     "id":"8"
+    },
+    {
+     "name": "Deadpool",
+     "photo": "https://images.unsplash.com/photo-1608889175123-8ee362201f81?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+     "year": "2011",
+     "description": " Lorem ipsum dolor sit, amet consectetur adipisicing elit.Reiciendis vel saepe libero nisi deleniti molestias blanditiis, minima non delectus nulla quia nihil, sit facilis quidem, perferendis cupiditate perspiciatis pariatur quo? Aliquam voluptates ullam eligendi. Velit sint corporis eum corrupti iste quidem rem assumenda est quasi facilis sit dolorem excepturi fugit consequuntur ipsam, ex voluptatem necessitatibus dolorum rerum aliquid atque harum.",
+     "rating":"0",
+     "link":"https://www.kinopoisk.ru/film/462360/",
+     "director": "Linda Nouse",
+     "actors": "Helen Wind, Gregory Maps, Billy Morfling, Bred Pit, Moris Endry, Philips Morgan, Sasha Metue, Drue Bring, Alice Wender, Pit Frost",
+     "comments":[],
+     "country":"USA",
+     "id":"9"
+    },
+    {
+     "name": "Bruce Lee",
+     "photo": "https://images.unsplash.com/photo-1470639425574-19736d045ab7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+     "year": "1998",
+     "description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis vel saepe libero nisi deleniti molestias blanditiis, minima non delectus nulla quia nihil, sit facilis quidem, perferendis cupiditate perspiciatis pariatur quo? Aliquam voluptates ullam eligendi. Velit sint corporis eum corrupti iste quidem rem assumenda est quasi facilis sit dolorem excepturi fugit consequuntur ipsam, ex voluptatem necessitatibus dolorum rerum aliquid atque harum.",
+     "rating":"0",
+     "link":"https://www.kinopoisk.ru/series/1219257/",
+     "director": "Piter Molson",
+     "actors": "Helen Wind, Gregory Maps, Billy Morfling, Bred Pit, Moris Endry, Philips Morgan, Sasha Metue, Drue Bring, Alice Wender, Pit Frost",
+     "comments":[],
+     "country":"USA",
+     "id":"10"
     }
-]
+   ]
