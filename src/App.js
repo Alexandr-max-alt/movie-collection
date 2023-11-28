@@ -1,121 +1,148 @@
-import React from 'react';
 import './index.css';
-import { Card } from './Components/Card/Card';
-import { Table } from './Components/Table/Table';
+import React from 'react';
+import { Collection } from './Components/Collection';
+import { Film } from './Components/Film';
+import { years, country, rating }  from './Components/Options';
+import Select from 'react-select';
 
 function App() {
-  const [allCards, setAllCards] = React.useState([]);
-  const [cards, setCards] = React.useState([]);
-  const [memorized, setMemorized] = React.useState([]);
-  const [listMemorization,setListMemorization] = React.useState([]);
+  const [collection, setCollection] = React.useState([]);
   const [isLoading, setIsLoading] = React.useState(true);
-  const [finishGame, setFinish] = React.useState(false);
-  const [showMemory, setShowMemory] = React.useState(false);
-  const [showTable, setShowTable] = React.useState(false);
-  const [randomIndex, setRandomIndex] = React.useState(0);
-  const [stepMix, setStepMix] = React.useState(0);
+  const [searchValue, setSearchValue] = React.useState('');
+  const [isFilm, setIsFilm] = React.useState(false);
+  const [id, setId] = React.useState(null);
 
-  // localStorage.clear()
+  const [currentYear,setCurrentYear] = React.useState('');
+  const [currentCountry,setCurrentCountry] = React.useState('');
+  const [currentRating, setCurrentRating] = React.useState('');
+
   React.useEffect(() => {
-    if (localStorage.getItem('cards')) {
-      const renderCards = JSON.parse(localStorage.getItem('cards'));
-
-      setCards(renderCards.cards)
-      setAllCards(renderCards.cards)
-      setMemorized(renderCards.memorized)
-      setListMemorization(renderCards.cardsForMemory)
+    if (localStorage.getItem('films')) {
+      setCollection(JSON.parse(localStorage.getItem('films')))
       setIsLoading(false)
-
-      checkLocal()
     } else {
-      fetch('/data.json')
+      fetch('https://65573e73bd4bcef8b6124ef7.mockapi.io/films')
       .then(res => res.json())
-      .then(json => {
-        setCards(json)
-        setAllCards(json)
-
-        localStorage.setItem('cards', JSON.stringify({'cards': json, 'memorized':[], 'cardsForMemory':[]}))
-      })
-      .catch(err => console.warn('err'))
-      .finally(()=>setIsLoading(false))
+        .then(json => {
+          setCollection(json)
+         localStorage.setItem('films', JSON.stringify(json))
+      }).catch(err => {
+        console.warn('err')
+      }).finally(()=>setIsLoading(false))
     }
   }, []);
+  
+  function handleRatingChange(id, newRating) {
+    setCollection(collection => {
+      const updateCollection = [...collection];
+      updateCollection[id-1].rating = newRating;
 
-  React.useEffect(() => {
-    if (!showMemory) {
-        const index = getRandom(cards);
-        setRandomIndex(index)
-    }
-  }, [cards]);
-
-
-  function saveToLocal(result, param) {
-    const updateCards = JSON.parse(localStorage.getItem('cards'));
-    updateCards[`${param}`] = result;
-
-    checkLocal()
-    localStorage.setItem('cards', JSON.stringify(updateCards));
+      saveToLocal(updateCollection);
+      return updateCollection;
+    });
   }
 
-  function getRandom(el) {
-    let num = Math.floor(Math.random() * (el.length - 1));
-    return num < 0 ? 0 : num;
+  function handleCommentsAdd(id,comment) {
+    setCollection(collection => {
+      const updateCollection = [...collection];
+      updateCollection[id-1].comments = [...updateCollection[id-1].comments, { name: "user", text: comment }];
+
+      saveToLocal(updateCollection);
+      return updateCollection;
+    });
   }
 
-  function checkLocal() {
-    const cards = JSON.parse(localStorage.getItem('cards'));
-    cards.cards.length === 0 && setFinish(true)
+  function deleteComment(id, ind) { 
+    setCollection(collection.map(el => {
+      if (el.id === id) {
+        el.comments = el.comments.filter((_, i) => i !== ind);
+        return el
+      }
+      return el
+    }));
+    saveToLocal(collection)
   }
- 
-  function clearStats() {
-    localStorage.clear()
-    window.location.reload();
+
+  function saveToLocal(res) {
+    localStorage.setItem('films', JSON.stringify(res));
+  }
+
+  function reloadPage() {
+    window.location.reload()
+  }
+
+  function getValue(currentValue,options) {
+    return currentValue ? options.find(c=>c.value === currentValue) : ''
+  }
+
+  function onChange(newValue,setCurrentValue) {
+    setCurrentValue(newValue.value)
   }
 
   return (
-    <div class='App'>
-      <header class='header'>
-        <h1 class='header__title'>English words</h1>
-      </header>
-      <div class='content'>
-        {isLoading ?
-          (<h1>Loading...</h1>)
-          : (<>
-            {finishGame ?
-              <h2>KONEC</h2>
-              :
-              <Card
-                saveToLocal={saveToLocal}
-                allCards={allCards}
-                listMemorization={listMemorization}
-                setListMemorization={setListMemorization}
-                setStepMix={setStepMix}
-                stepMix={stepMix}
-                getRandom={getRandom}
-                setRandomIndex={setRandomIndex}
-                randomIndex={randomIndex}
-                showMemory={showMemory}
-                setShowMemory={setShowMemory}
-                setMemorized={setMemorized}
-                memorized={memorized}
-                setFinish={setFinish}
-                setCards={setCards}
-                cards={cards}
+    <div className='App'>
+          <div className='header'>
+          <h1 className='header__title' onClick={reloadPage}>Movie collection</h1>
+          <div className='w-134 flex gap-5 basis-3/5 justify-end'>
+          <Select
+              classNamePrefix='custom-select'
+              onChange={(newValue)=>onChange(newValue,setCurrentYear)}
+              value={getValue(currentYear,years)}
+              placeholder='Choice year...'
+              options={years}
             />
-            }
-            </>
-          ) 
-        }  
-        <button onClick={() => clearStats()} class="button-clear">Clear</button>
-        <button onClick={() => setShowTable(true)} class="button-table">Table</button>
-        <Table
-          listMemorization={listMemorization}
-          memorized={memorized}
-          allCards={allCards}
-          setShowTable={setShowTable}
-          showTable={showTable}
-        />
+          <Select
+              classNamePrefix='custom-select'
+              onChange={(newValue)=>onChange(newValue,setCurrentCountry)}
+              value={getValue(currentCountry,country)}
+              placeholder='Choice country...'
+              options={country}
+            />
+          <Select
+              classNamePrefix='custom-select'
+              onChange={(newValue)=>onChange(newValue,setCurrentRating)}
+              value={getValue(currentRating,rating)}
+              placeholder='Choice rating...'
+              options={rating}
+            />
+          </div>
+            <input
+              value={searchValue}
+              onChange={(e) => setSearchValue(e.target.value)}
+              placeholder='Search name...'
+            >
+            </input>
       </div>
+      {isFilm ? (
+        <Film
+          deleteComment={deleteComment}
+          key={id}
+          addComment={handleCommentsAdd}
+          onChangeRating={handleRatingChange}
+          id={id}
+          collection={collection}
+          reloadPage={reloadPage}
+        />
+      ) : (<ul className='content'>
+        {isLoading ? (
+          <h1>Loading...</h1>
+        ) : (collection
+              .filter(obj => obj.name.toLowerCase().includes(searchValue.toLowerCase().trim()))
+              .filter(obj => currentYear ? currentYear.includes(obj.year) : obj)
+              .filter(obj => currentCountry ? currentCountry.includes(obj.country) : obj)
+              .filter(obj => currentRating ? currentRating.includes(obj.rating) : obj)
+          .map((obj, index) => (
+            <Collection
+              key={obj.id}
+              saveToLocal={saveToLocal}
+              setIsFilm={setIsFilm}
+              {...obj}
+              setId={setId}
+              index={index}
+            />
+          ))
+        )}
+      </ul>)}
     </div>
   );
 }
