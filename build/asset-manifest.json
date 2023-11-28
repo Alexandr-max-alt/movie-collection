@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Alexandr-max-alt.github.io/test/static/css/main.6499837a.css",
+    "main.js": "/Alexandr-max-alt.github.io/test/static/js/main.0c27bb03.js",
+    "index.html": "/Alexandr-max-alt.github.io/test/index.html",
+    "main.6499837a.css.map": "/Alexandr-max-alt.github.io/test/static/css/main.6499837a.css.map",
+    "main.0c27bb03.js.map": "/Alexandr-max-alt.github.io/test/static/js/main.0c27bb03.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6499837a.css",
+    "static/js/main.0c27bb03.js"
+  ]
+}
