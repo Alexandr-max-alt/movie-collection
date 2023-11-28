@@ -1,0 +1,167 @@
+[
+    {
+        "name": "Dog",
+        "translation": "Собака",
+        "id":"0"
+    },  {
+        "name": "Cat",
+        "translation": "Кошка",
+        "id":"1"
+    },  {
+        "name": "House",
+        "translation": "Дом",
+        "id":"2"
+    },  {
+        "name": "Tree",
+        "translation": "Дерево",
+        "id":"3"
+    },  {
+        "name": "Path",
+        "translation": "Путь",
+        "id":"4"
+    },  {
+        "name": "Heart",
+        "translation": "Сердце",
+        "id":"5"
+    },  {
+        "name": "Car",
+        "translation": "Машина",
+        "id":"6"
+    },  {
+        "name": "Promise",
+        "translation": "Обещание",
+        "id":"7"
+    },  {
+        "name": "Сircus",
+        "translation": "Цирк",
+        "id":"8"
+    },  {
+        "name": "Flowers",
+        "translation": "Цветы",
+        "id":"9"
+    },  {
+        "name": "White",
+        "translation": "Белый",
+        "id":"10"
+    },  {
+        "name": "As",
+        "translation": "Как",
+        "id":"11"
+    },  {
+        "name": "I",
+        "translation": "Я",
+        "id":"12"
+    },  {
+        "name": "His",
+        "translation": "Его",
+        "id":"13"
+    },  {
+        "name": "Her",
+        "translation": "Её",
+        "id":"14"
+    },  {
+        "name": "For",
+        "translation": "Для",
+        "id":"15"
+    },  {
+        "name": "On",
+        "translation": "На",
+        "id":"16"
+    },  {
+        "name": "With",
+        "translation": "С",
+        "id":"17"
+    },  {
+        "name": "One",
+        "translation": "Один",
+        "id":"18"
+    },  {
+        "name": "be",
+        "translation": "Быть",
+        "id":"19"
+    },  {
+        "name": "Have",
+        "translation": "Иметь",
+        "id":"20"
+    },  {
+        "name": "From",
+        "translation": "Из",
+        "id":"21"
+    },  {
+        "name": "Hot",
+        "translation": "Горячий",
+        "id":"22"
+    },  {
+        "name": "by",
+        "translation": "От",
+        "id":"23"
+    },  {
+        "name": "Some",
+        "translation": "Некоторый",
+        "id":"24"
+    },  {
+        "name": "You",
+        "translation": "Ты",
+        "id":"25"
+    },  {
+        "name": "Or",
+        "translation": "Или",
+        "id":"26"
+    },  {
+        "name": "And",
+        "translation": "И",
+        "id":"27"
+    },  {
+        "name": "Other",
+        "translation": "Другой",
+        "id":"28"
+    },  {
+        "name": "Their",
+        "translation": "Их",
+        "id":"29"
+    },  {
+        "name": "Which",
+        "translation": "Который",
+        "id":"30"
+    },  {
+        "name": "Can",
+        "translation": "Может",
+        "id":"31"
+    },  {
+        "name": "Which",
+        "translation": "Который",
+        "id":"32"
+    },  {
+        "name": "Out",
+        "translation": "Вне",
+        "id":"33"
+    },  {
+        "name": "Were",
+        "translation": "Были",
+        "id":"34"
+    },  {
+        "name": "Time",
+        "translation": "Время",
+        "id":"35"
+    },  {
+        "name": "Said",
+        "translation": "Говорить",
+        "id":"36"
+    },  {
+        "name": "If",
+        "translation": "Если",
+        "id":"37"
+    },  {
+        "name": "Tell",
+        "translation": "Говорить",
+        "id":"38"
+    },  {
+        "name": "Three",
+        "translation": "Три",
+        "id":"39"
+    },  {
+        "name": "Small",
+        "translation": "Маленький",
+        "id":"40"
+    }
+]
